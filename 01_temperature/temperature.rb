@@ -1,4 +1,3 @@
-#write your code here
 def ftoc(degree)
   (degree - 32)*5/9.0
 end
