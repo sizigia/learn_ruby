@@ -1,5 +1,5 @@
 class Timer
-  attr_accessor :seconds
+  attr_writer :seconds
 
   def initialize
     @timer = 0
