@@ -17,7 +17,6 @@ class Timer
       def stringy(param)
         '%02d' % param.to_s
       end
-             
-      stringy(@h) + ':' + stringy(@m) + ':' + stringy(@s)
+      [@h, @m, @s].map{|i| stringy(i)}.join(':')
   end
 end
