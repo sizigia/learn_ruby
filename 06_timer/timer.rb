@@ -1,3 +1,23 @@
 class Timer
-  #write your code here
+  attr_accessor :seconds
+
+  def initialize
+    @timer = 0
+  end
+
+  def seconds
+    @timer
+  end
+
+  def time_string
+      @s = @seconds%60
+      @m = @seconds%3600/60
+      @h = @seconds/3600
+
+      def stringy(param)
+        '%02d' % param.to_s
+      end
+             
+      stringy(@h) + ':' + stringy(@m) + ':' + stringy(@s)
+  end
 end
